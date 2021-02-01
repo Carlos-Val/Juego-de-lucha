@@ -1,0 +1,26 @@
+.luchadores {
+    display: flex;
+    flex-direction: row;
+}
+
+.cuadrosLuchadores {
+    margin: 1em;
+    border: solid 0.5em orange;
+    height: 13em;
+    width: 15em;
+}
+
+.elegido {
+    margin: 1em;
+    border: solid 0.5em orange;
+    height: 13em;
+    width: 15em;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+
+
+.foto {
+    width: 100%;
+}
