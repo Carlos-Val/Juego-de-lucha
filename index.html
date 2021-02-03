@@ -9,20 +9,39 @@
 </head>
 <body>
     
-    <div class="luchadores">
-        <div class="cuadrosLuchadores" id="luchador1" onclick="selectPersonaje('luchador1')"><img class="foto" src="img/BU.jpg" style="width: 100%; height: 100%;"></div>
-        <div class="cuadrosLuchadores" id="luchador2" onclick="selectPersonaje('luchador2')"><img class="foto" src="img/Freezer.jpg" style="width: 100%; height: 100%;"></div>
-        <div class="cuadrosLuchadores" id="luchador3" onclick="selectPersonaje('luchador3')"><img class="foto" src="img/Krilin.png" style="width: 100%; height: 100%;"></div>
-        <div class="cuadrosLuchadores" id="luchador4" onclick="selectPersonaje('luchador4')"><img class="foto" src="img/Piccolo.jpg" style="width: 100%; height: 100%;"></div>
-        <div class="cuadrosLuchadores" id="luchador5" onclick="selectPersonaje('luchador5')"><img class="foto" src="img/Satan.png" style="width: 100%; height: 100%;"></div>
-        <div class="cuadrosLuchadores" id="luchador6" onclick="selectPersonaje('luchador6')"><img class="foto" src="img/Son Goku Niño.jpg" style="width: 100%; height: 100%;"></div>
-        <div class="cuadrosLuchadores" id="luchador7" onclick="selectPersonaje('luchador7')"><img class="foto" src="img/Vegeta.jpg" style="width: 100%; height: 100%;"></div>
-        <div class="cuadrosLuchadores" id="luchador8" onclick="selectPersonaje('luchador8')"><img class="foto" src="img/Son Goku.png" style="width: 100%; height: 100%;"></div>
-    </div>
+    <div class="general">
 
-    <div class="equipoA"></div>
-    <div class="equipoB"></div>
+        <div id="screen1" class="pantalla1" style="display: block;">
+            <div class="luchadores">
+                    <div class="cuadrosLuchadores" id="Bu" onclick="selectPersonaje('Bu')"><img class="foto" src="img/BU.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="Freezer" onclick="selectPersonaje('Freezer')"><img class="foto" src="img/Freezer.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="Krilin" onclick="selectPersonaje('Krilin')"><img class="foto" src="img/Krilin.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="Piccolo" onclick="selectPersonaje('Piccolo')"><img class="foto" src="img/Piccolo.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="Satan" onclick="selectPersonaje('Satan')"><img class="foto" src="img/Satan.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="SonGoku_niño" onclick="selectPersonaje('SonGoku_niño')"><img class="foto" src="img/Son Goku Niño.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="Vegeta" onclick="selectPersonaje('Vegeta')"><img class="foto" src="img/Vegeta.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="SonGoku" onclick="selectPersonaje('SonGoku')"><img class="foto" src="img/Son Goku.jpg" style="width: 100%; height: 100%;"></div>
+            
+            </div>       
+            <div id="mensaje"></div>
+        </div>
 
+        <div id="screen2" class="pantalla2" style="display: none;">
+        
+            <div class="guerrerosCombate">
+                <div id="contrincante1"></div>
+                <div id="contrincante2"></div>
+            </div>
+        </div>
+        
+
+
+        
+
+            <!--
+            <div class="equipoA"></div>
+            <div class="equipoB"></div> -->
+</div>
     <script src="js/main.js"></script>
 </body>
 </html>
