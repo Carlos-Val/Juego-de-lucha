@@ -5,23 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club de la lucha</title>
 
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     
     <div class="general">
 
-        <div id="screen1" class="pantalla1" style="display: none;">
+        
+
+        <!--<div id="screen0" class="pantalla0" style="display: none;">-->
+
+
+        <div id="screen1" class="pantalla1" style="display: block;">
             <div class="luchadores">
-                    <div class="cuadrosLuchadores" id="Bu" onclick="selectPersonaje('Bu')"><img class="foto" src="img/BU.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="Bu" onclick="selectPersonaje('Bu')"><img class="foto" src="img/Bu.jpg" style="width: 100%; height: 100%;"></div>
                     <div class="cuadrosLuchadores" id="Freezer" onclick="selectPersonaje('Freezer')"><img class="foto" src="img/Freezer.jpg" style="width: 100%; height: 100%;"></div>
                     <div class="cuadrosLuchadores" id="Krilin" onclick="selectPersonaje('Krilin')"><img class="foto" src="img/Krilin.jpg" style="width: 100%; height: 100%;"></div>
                     <div class="cuadrosLuchadores" id="Piccolo" onclick="selectPersonaje('Piccolo')"><img class="foto" src="img/Piccolo.jpg" style="width: 100%; height: 100%;"></div>
                     <div class="cuadrosLuchadores" id="Satan" onclick="selectPersonaje('Satan')"><img class="foto" src="img/Satan.jpg" style="width: 100%; height: 100%;"></div>
-                    <div class="cuadrosLuchadores" id="SonGoku_niño" onclick="selectPersonaje('SonGoku_niño')"><img class="foto" src="img/Son Goku Niño.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="Trunks" onclick="selectPersonaje('Trunks')"><img class="foto" src="img/Trunks.jpg" style="width: 100%; height: 100%;"></div>
                     <div class="cuadrosLuchadores" id="Vegeta" onclick="selectPersonaje('Vegeta')"><img class="foto" src="img/Vegeta.jpg" style="width: 100%; height: 100%;"></div>
-                    <div class="cuadrosLuchadores" id="SonGoku" onclick="selectPersonaje('SonGoku')"><img class="foto" src="img/Son Goku.jpg" style="width: 100%; height: 100%;"></div>
+                    <div class="cuadrosLuchadores" id="SonGoku" onclick="selectPersonaje('SonGoku')"><img class="foto" src="img/SonGoku.jpg" style="width: 100%; height: 100%;"></div>
             
+            </div>
+            <div class="caracteristicas">
+                <div class="caracteristicas2">
+                    <div class="prueba">ATAQUE</br></br>48</br></br>DEFENSA</br></br>28</br></br>SUERTE</br>★★★★★</br></br>HANDICAP</br>★★</div></div>
+                <div class="caracteristicas1" id="Freezer">ATAQUE</br></br>43</br></br>DEFENSA</br></br>26</br></br>SUERTE</br>★★★★</br></br>HANDICAP</br>★★</div>
+                <div class="caracteristicas1" id="Krilin">ATAQUE</br></br>31</br></br>DEFENSA</br></br>13</br></br>SUERTE</br>★★</br></br>HANDICAP</br>★★★★</div>
+                <div class="caracteristicas1" id="Piccolo">ATAQUE</br></br>36</br></br>DEFENSA</br></br>23</br></br>SUERTE</br>★★★</br></br>HANDICAP</br>★★★</div>
+                <div class="caracteristicas1" id="Satan">ATAQUE</br></br>21</br></br>DEFENSA</br></br>2</br></br>SUERTE</br>★</br></br>HANDICAP</br>★★★★★</div>
+                <div class="caracteristicas1" id="Trunks">ATAQUE</br></br>39</br></br>DEFENSA</br></br>18</br></br>SUERTE</br>★★★</br></br>HANDICAP</br>★★★</div>
+                <div class="caracteristicas1" id="Vegeta">ATAQUE</br></br>46</br></br>DEFENSA</br></br>23</br></br>SUERTE</br>★★★</br></br>HANDICAP</br>★★</div>
+                <div class="caracteristicas1" id="SonGoku">ATAQUE</br></br>50</br></br>DEFENSA</br></br>30</br></br>SUERTE</br>★★★★★</br></br>HANDICAP</br>★★</div>
             </div>       
             <div id="mensaje"></div>
         </div>
@@ -29,8 +47,14 @@
         <div id="screen2" class="pantalla2" style="display: none;">
         
             <div class="guerrerosCombate">
-                <div id="contrincante1"></div>
-                <div id="contrincante2"></div>
+                <div id="guerrero1"></div>
+                <div class="botonAtacar">
+                    <div id="golpe" class="botonAtacar1" onclick="atacar()"></div>
+                </div>
+                <div id="guerrero2"></div>
+                
+
+
             </div>
         </div>
         
@@ -38,9 +62,7 @@
 
         
 
-            <!--
-            <div class="equipoA"></div>
-            <div class="equipoB"></div> -->
+            
 </div>
     <script src="js/main.js"></script>
 </body>

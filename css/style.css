@@ -1,52 +1,97 @@
+.pantalla1{
+    display: flex;
+    flex-direction: column;
+}
 .luchadores {
     display: flex;
     flex-direction: row;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .cuadrosLuchadores {
     margin: 1em;
-    /*border: solid 0.5em orange;*/
+    border: solid 0.2em black;
     height: 13em;
     width: 15em;
-    border-radius: 20%;
+    border-radius: 5%;
 
 }
-
-
-
-/*.elegido {
-    margin: 1em;
-    border: solid 0.5em orange;
-    height: 13em;
-    width: 15em;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
-    border-radius: 20%;
-}*/
-
-
-
-.foto {
-    
-    
-    
-    
-    
-}
-
 .foto2 {
     margin: 1em;
-    /*border: solid 0.5em orange;*/
     height: 13em;
     width: 15em;
-    border-radius: 20%;
+    border-radius: 5%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 
 }
+.caracteristicas{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    margin-right: 2em;
+
+}
+.caracteristicas1{
+    height: 14em;
+    width: 14em;
+    font-family: 'Press Start 2P', cursive;
+    margin: 1em;
+    /*border: solid 0.2em black;
+    border-radius: 5%;*/
+    font-size: 90%;
+    text-align: center;
+    
+}
+.caracteristicas2{
+    height: 14em;
+    width: 14em;
+    font-family: 'Press Start 2P', cursive;
+    margin: 1em;
+    /*border: solid 0.2em black;
+    border-radius: 5%;*/
+    font-size: 90%;
+    text-align: center;
+}
+.prueba{
+    color: transparent;
+    transition: 2.5s;
+
+}
+
+.prueba:hover { 
+    
+    color: black;
+
+}
+
+
 
 #mensaje{
     color: red;
     font-size: 2em;
     margin-top: 2em;
+}
+.guerrerosCombate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.guerrero1{    
+    height: 13em;
+    width: 11em;
+    margin: 2em;
+
+}
+.guerrero2{    
+    height: 13em;
+    width: 11em;
+    margin: 2em;
+}
+.botonAtacar1{
+    height: 3em;
+    width: 3em;
+    background-color: red;
 }
