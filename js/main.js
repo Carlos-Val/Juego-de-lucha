@@ -1,3 +1,29 @@
+
+let empezar = () => {
+
+    let cambiaPantalla = (fase1,fase2) => {
+        let pantalla0 = document.getElementById(fase1);
+    
+        let pantalla1 = document.getElementById(fase2);
+    
+        // Aquí se cambia de pantalla
+    
+        pantalla0.style.display = "none";
+        pantalla1.style.display = "block";
+    };
+
+    resolveIn(0).then(delay => {
+        cambiaPantalla("screen0","screen1");
+    });
+
+
+}
+
+
+
+
+
+
 //Clases
 class Guerrero {
 
@@ -86,7 +112,7 @@ let selectPersonaje = (personaje) => {
         document.getElementById(personaje).className = "foto2";
         document.getElementById(personaje).onclick = "";
     
-    }else{
+    }else {
         j2 = allplayers[personaje];
 
         document.getElementById(personaje).className = "foto2";
@@ -99,19 +125,21 @@ let selectPersonaje = (personaje) => {
         mensaje.innerHTML = `Has elegido el primer guerrero que es ${j1.nombre} y al segundo que es ${j2.nombre}`;
 
         //Se cargan los personajes en la pantalla2
-
-        let showJugador1 = document.getElementById("guerrero1");
-        let showJugador2 = document.getElementById("guerrero2");
-
-        showJugador1.innerHTML = `<div><img class="guerrero1" src="img/${j1.nombre}.jpg"></div>`;
-        showJugador2.innerHTML = `<div><img class="guerrero2" src="img/${j2.nombre}.jpg"></div>`;
         
+           
+            let showJugador1 = document.getElementById("guerrero1");
+            let showJugador2 = document.getElementById("guerrero2");
 
-        //Cambiar de pantalla porque ya tenemos a los guerreros elegidos
+            showJugador1.innerHTML = `<div><img class="guerrero1" src="img/${j1.nombre}.jpg"></div>`;
+            showJugador2.innerHTML = `<div><img class="guerrero2" src="img/${j2.nombre}.jpg"></div>`;
+            
 
-        resolveIn(1000).then(delay => {
-            cambiaPantalla("screen1","screen2");
-        });
+            //Cambiar de pantalla porque ya tenemos a los guerreros elegidos
+
+            resolveIn(1000).then(delay => {
+                cambiaPantalla("screen1","screen2");
+            });
+        
 
     };
 };
