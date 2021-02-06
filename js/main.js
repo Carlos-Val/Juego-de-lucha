@@ -1,23 +1,22 @@
 
-let empezar = () => {
 
-    let cambiaPantalla = (fase1,fase2) => {
-        let pantalla0 = document.getElementById(fase1);
     
-        let pantalla1 = document.getElementById(fase2);
+
+//let cambiaPantalla = (fase0,fase1) => {
+//    let pantalla0 = document.getElementById(fase0);
+//
+//    let pantalla1 = document.getElementById(fase1);
+//
+//    // Aquí se cambia de pantalla
+//
+//    pantalla0.style.display = "none";
+//    pantalla1.style.display = "block";
+//};
+//    resolveIn(0).then(delay => {
+//    cambiaPantalla("screen0","screen1");
+//});
     
-        // Aquí se cambia de pantalla
     
-        pantalla0.style.display = "none";
-        pantalla1.style.display = "block";
-    };
-
-    resolveIn(0).then(delay => {
-        cambiaPantalla("screen0","screen1");
-    });
-
-
-}
 
 
 
@@ -94,18 +93,21 @@ let inicioGame = () => {
     
 };
 
-let cambiaPantalla = (fase1,fase2) => {
-    let pantalla1 = document.getElementById(fase1);
+let cambiaPantalla = (faseAhora,faseFutura) => {
+    pantallaActual = document.getElementById(faseAhora);
 
-    let pantalla2 = document.getElementById(fase2);
+    pantallaDestino = document.getElementById(faseFutura);
 
     // Aquí se cambia de pantalla
 
-    pantalla1.style.display = "none";
-    pantalla2.style.display = "block";
+    pantallaActual.style.display = "none";
+    pantallaDestino.style.display = "flex";
 };
-
+mensaje2.innerHTML = `¡¡¡¡ELIGE DOS GUERREROS PARA QUE LUCHEN HASTA LA MUERTE!!!!`;
 let selectPersonaje = (personaje) => {
+
+    
+
     if(j1 == ""){
         j1 = allplayers[personaje];
 
@@ -123,6 +125,7 @@ let selectPersonaje = (personaje) => {
         //Mensaje de lo que han elegido
 
         mensaje.innerHTML = `Has elegido el primer guerrero que es ${j1.nombre} y al segundo que es ${j2.nombre}`;
+
 
         //Se cargan los personajes en la pantalla2
         
@@ -144,31 +147,43 @@ let selectPersonaje = (personaje) => {
     };
 };
 
+
 let atacar = () => {
     //Funcion de ataque
+    let live1 = document.getElementById("live1");
+    let live2 = document.getElementById("live2");
+    
+
+
     let turno = Math.floor(Math.random() * 2);
     let especial = Math.floor(Math.random() * 5);
     let megaHit = Math.floor(Math.random() * 20);
-
+    
     if(turno == 0){
         if(megaHit == 18){
             console.log("SUPER COMBO");
             j1.megaAtaque(j2);
+            live1.value = `${j1.vida}`;
         }else if(especial == 4){
             console.log("KAME HAME");
             j1.ataqueEspecial(j2);
+            live1.value = `${j1.vida}`;
         }else{
             j1.ataque(j2);
+            live1.value = `${j1.vida}`;
         }
     }else{
         if(megaHit == 18){
             console.log("SUPER COMBO");
             j2.megaAtaque(j1);
+            live2.value = `${j2.vida}`;
         }else if(especial == 4){
             console.log("KAME HAME");
             j2.ataqueEspecial(j1);
+            live2.value = `${j2.vida}`;
         }else{
             j2.ataque(j1);
+            live2.value = `${j2.vida}`;
         }
     }
 

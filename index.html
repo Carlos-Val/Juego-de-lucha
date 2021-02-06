@@ -7,18 +7,24 @@
 
 
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     
     <div class="general">
+        <!--<audio src="/img/Opening_Bola_de_Drac_Valenciano_Hd.mp3" autoplay loop></audio>-->
 
         
 
-        <div id="screen0" class="pantalla0" style="display: block;">
+        <div id="screen0" class="pantalla0" style="display: flex;">
             <div class="principal">
-                <audio src="/img/Opening_Bola_de_Drac_Valenciano_Hd.mp3" autoplay loop></audio>
-                <div class="boton_personalizado" onclick="empezar()">START</div></div>
+                
+                <div id="comienzo" class="boton_personalizado" onclick="cambiaPantalla('screen0','screen1')">Click to START</div>
+                
+            
+            </div>
+        </div>
             
             
     
@@ -26,6 +32,7 @@
 
         <div id="screen1" class="pantalla1" style="display: none;">
             <div class="luchadores">
+                
                     <div class="cuadrosLuchadores" id="Bu" onclick="selectPersonaje('Bu')"><img class="foto" src="img/Bu.jpg" style="width: 100%; height: 100%;"></div>
                     <div class="cuadrosLuchadores" id="Freezer" onclick="selectPersonaje('Freezer')"><img class="foto" src="img/Freezer.jpg" style="width: 100%; height: 100%;"></div>
                     <div class="cuadrosLuchadores" id="Krilin" onclick="selectPersonaje('Krilin')"><img class="foto" src="img/Krilin.jpg" style="width: 100%; height: 100%;"></div>
@@ -37,8 +44,7 @@
             
             </div>
             <div class="caracteristicas">
-                <div class="caracteristicas2">
-                    <div class="prueba">ATAQUE</br></br>48</br></br>DEFENSA</br></br>28</br></br>SUERTE</br>★★★★★</br></br>HANDICAP</br>★★</div></div>
+                <div class="caracteristicas1" id="Bu">ATAQUE</br></br>48</br></br>DEFENSA</br></br>28</br></br>SUERTE</br>★★★★★</br></br>HANDICAP</br>★★</div>
                 <div class="caracteristicas1" id="Freezer">ATAQUE</br></br>43</br></br>DEFENSA</br></br>26</br></br>SUERTE</br>★★★★</br></br>HANDICAP</br>★★</div>
                 <div class="caracteristicas1" id="Krilin">ATAQUE</br></br>31</br></br>DEFENSA</br></br>13</br></br>SUERTE</br>★★</br></br>HANDICAP</br>★★★★</div>
                 <div class="caracteristicas1" id="Piccolo">ATAQUE</br></br>36</br></br>DEFENSA</br></br>23</br></br>SUERTE</br>★★★</br></br>HANDICAP</br>★★★</div>
@@ -46,18 +52,35 @@
                 <div class="caracteristicas1" id="Trunks">ATAQUE</br></br>39</br></br>DEFENSA</br></br>18</br></br>SUERTE</br>★★★</br></br>HANDICAP</br>★★★</div>
                 <div class="caracteristicas1" id="Vegeta">ATAQUE</br></br>46</br></br>DEFENSA</br></br>23</br></br>SUERTE</br>★★★</br></br>HANDICAP</br>★★</div>
                 <div class="caracteristicas1" id="SonGoku">ATAQUE</br></br>50</br></br>DEFENSA</br></br>30</br></br>SUERTE</br>★★★★★</br></br>HANDICAP</br>★★</div>
-            </div>       
+            </div>
+            
+                    
+            <div id="mensaje2"></div>
             <div id="mensaje"></div>
         </div>
 
         <div id="screen2" class="pantalla2" style="display: none;">
-        
+            
             <div class="guerrerosCombate">
-                <div id="guerrero1"></div>
+                <div class="reunidos1">
+                    <div class="contieneBarra1">
+                        <progress id="live1" value="200" max="200" min="0"></progress></div>
+                    <div id="guerrero1"></div>
+                </div>    
+                                        
                 <div class="botonAtacar">
                     <div id="golpe" class="botonAtacar1" onclick="atacar()"><img class="puño" src="img/puñetazo.jpg"></div>
                 </div>
-                <div id="guerrero2"></div>
+                <div class="reunidos2">
+                    <div class="contieneBarra2">
+                    <progress id="live2" value="200" max="200" min="0"></progress></div>
+                    <div id="guerrero2"></div>
+                </div>
+
+                    
+                
+                
+                
                 
 
 
