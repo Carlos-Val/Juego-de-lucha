@@ -197,3 +197,23 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
     background-color: gold;
 }
+.pantalla3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondo\ lucha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 38em;
+}
+.winner1{
+    height: 14em;
+    width: 12em;
+}
+.winner2{
+    height: 14em;
+    width: 12em;
+}

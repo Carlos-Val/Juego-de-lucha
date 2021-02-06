@@ -1,28 +1,4 @@
 
-
-    
-
-//let cambiaPantalla = (fase0,fase1) => {
-//    let pantalla0 = document.getElementById(fase0);
-//
-//    let pantalla1 = document.getElementById(fase1);
-//
-//    // Aquí se cambia de pantalla
-//
-//    pantalla0.style.display = "none";
-//    pantalla1.style.display = "block";
-//};
-//    resolveIn(0).then(delay => {
-//    cambiaPantalla("screen0","screen1");
-//});
-    
-    
-
-
-
-
-
-
 //Clases
 class Guerrero {
 
@@ -189,6 +165,29 @@ let atacar = () => {
 
     console.log(j1.nombre + j1.vida);
     console.log(j2.nombre + j2.vida);
+
+    let showWinner1 = document.getElementById("winner1");
+    let showWinner2 = document.getElementById("winner2");
+    
+   
+
+    if(j1.vida <= 0){
+        
+        resolveIn(10).then(delay => {
+            cambiaPantalla("screen2","screen3");
+        });
+        showWinner2.innerHTML = `<div><img id="winner2" src="img/${j2.nombre}.jpg"></div>`;
+        showWinnerName.innerHTML = `${j2.nombre} WINS!!!`;
+        
+    }else if(j2.vida <= 0){
+        
+        resolveIn(10).then(delay => {
+            cambiaPantalla("screen2","screen3");
+        });
+        showWinner1.innerHTML = `<div><img id="winner1" src="img/${j1.nombre}.jpg"></div>`;
+        showWinnerName.innerHTML = `${j1.nombre} WINS!!!`;
+        
+    }
 
 }
 
