@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 39em;
+    height: 43em;
 }
 #comienzo{
     margin-right: 19em;
@@ -45,7 +45,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 38em;
+    height: 43em;
+   
 }
 .eleccion{
     height: 2em;
@@ -129,20 +130,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/campo\ de\ batalla.jpg);  
-    background-position: center;
+    background-image: url(../img/campo\ de\ batalla.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 39em;
+    height: 43em;
     width: 100%;
+    
+
+}
+#fondoPantalla2{
+    width: 100%;
+    position: absolute;
 }
 .reunidos1{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 11em;
+    margin-top: 13em;
     margin-right: 5em;
     
 }
@@ -156,7 +164,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 11em;
+    margin-top: 13em;
     margin-left: 5em;
     
 }
@@ -208,7 +216,8 @@ progress[value]::-webkit-progress-value {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 39em;
+    height: 43em;
+    
 }
 .generalPantalla3{
     display:flex;
@@ -232,8 +241,7 @@ progress[value]::-webkit-progress-value {
 }
 .resetBtn{
     font-size: 1.5em;
-    margin-top: 20em;
-   
+    margin-top: 20em;   
     padding: 0.5em;
     color:black;
     background-color: transparent;
@@ -242,10 +250,10 @@ progress[value]::-webkit-progress-value {
     font-family: 'Press Start 2P', cursive;
     
 }
-.resetBtn:hover{
+/*.resetBtn:hover{
     background-color: black;
-    -webkit-transform: scale(1.5);
+    
     color: rgb(218, 132, 20);
     border: black;
-}
+}*/
 
