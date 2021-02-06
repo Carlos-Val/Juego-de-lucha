@@ -96,13 +96,7 @@ let selectPersonaje = (personaje) => {
         document.getElementById(personaje).className = "foto2";
         document.getElementById(personaje).onclick = "";
 
-        let mensaje = document.getElementById("mensaje");
-
-        //Mensaje de lo que han elegido
-
-        mensaje.innerHTML = `Has elegido el primer guerrero que es ${j1.nombre} y al segundo que es ${j2.nombre}`;
-
-
+        
         //Se cargan los personajes en la pantalla2
         
            
@@ -115,7 +109,7 @@ let selectPersonaje = (personaje) => {
 
             //Cambiar de pantalla porque ya tenemos a los guerreros elegidos
 
-            resolveIn(1000).then(delay => {
+            resolveIn(100).then(delay => {
                 cambiaPantalla("screen1","screen2");
             });
         
@@ -139,35 +133,37 @@ let atacar = () => {
         if(megaHit == 18){
             console.log("SUPER COMBO");
             j1.megaAtaque(j2);
-            live1.value = `${j1.vida}`;
+            
         }else if(especial == 4){
             console.log("KAME HAME");
             j1.ataqueEspecial(j2);
-            live1.value = `${j1.vida}`;
+            
         }else{
             j1.ataque(j2);
-            live1.value = `${j1.vida}`;
+            
         }
     }else{
         if(megaHit == 18){
             console.log("SUPER COMBO");
             j2.megaAtaque(j1);
-            live2.value = `${j2.vida}`;
+            
         }else if(especial == 4){
             console.log("KAME HAME");
             j2.ataqueEspecial(j1);
-            live2.value = `${j2.vida}`;
+            
         }else{
             j2.ataque(j1);
-            live2.value = `${j2.vida}`;
+            
         }
     }
-
+    live1.value = `${j1.vida}`;
+    live2.value = `${j2.vida}`;
     console.log(j1.nombre + j1.vida);
     console.log(j2.nombre + j2.vida);
 
     let showWinner1 = document.getElementById("winner1");
     let showWinner2 = document.getElementById("winner2");
+    let showWinnerName = document.getElementById("fraseWinner");
     
    
 
@@ -176,7 +172,7 @@ let atacar = () => {
         resolveIn(10).then(delay => {
             cambiaPantalla("screen2","screen3");
         });
-        showWinner2.innerHTML = `<div><img id="winner2" src="img/${j2.nombre}.jpg"></div>`;
+        showWinner2.innerHTML = `<div><img class="winner2" src="img/${j2.nombre}.jpg"></div>`;
         showWinnerName.innerHTML = `${j2.nombre} WINS!!!`;
         
     }else if(j2.vida <= 0){
@@ -184,16 +180,16 @@ let atacar = () => {
         resolveIn(10).then(delay => {
             cambiaPantalla("screen2","screen3");
         });
-        showWinner1.innerHTML = `<div><img id="winner1" src="img/${j1.nombre}.jpg"></div>`;
+        showWinner1.innerHTML = `<div><img class="winner1" src="img/${j1.nombre}.jpg"></div>`;
         showWinnerName.innerHTML = `${j1.nombre} WINS!!!`;
         
-    }
+    };
+    const reset = document.getElementById("resetButton");
+    reset.addEventListener('click', () => {
+        window.location.reload();
+    });
 
-}
-
-
-
-
+};
 
 const resolveIn = delay =>
 new Promise(res => setTimeout(() => res(delay), delay));

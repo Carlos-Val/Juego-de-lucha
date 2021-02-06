@@ -74,8 +74,9 @@
     height: 13em;
     width: 6.5em;
     border-radius: 5%;
-    
-
+}
+.cuadrosLuchadores:hover{
+    -webkit-transform: scale(1.2);
 }
 .foto2 {
     margin: 2em;
@@ -199,7 +200,7 @@ progress[value]::-webkit-progress-value {
 }
 .pantalla3{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-image: url(../img/fondo\ lucha.png);
@@ -207,13 +208,44 @@ progress[value]::-webkit-progress-value {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 38em;
+    height: 39em;
+}
+.generalPantalla3{
+    display:flex;
+    flex-direction: column;
 }
 .winner1{
     height: 14em;
     width: 12em;
+    margin-left: -12em;
 }
 .winner2{
     height: 14em;
     width: 12em;
+    margin-left: -12em;
 }
+#fraseWinner{
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+    margin-left: -7em;
+    margin-bottom: 1em;
+}
+.resetBtn{
+    font-size: 1.5em;
+    margin-top: 20em;
+   
+    padding: 0.5em;
+    color:black;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid black;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+.resetBtn:hover{
+    background-color: black;
+    -webkit-transform: scale(1.5);
+    color: rgb(218, 132, 20);
+    border: black;
+}
+

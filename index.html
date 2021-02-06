@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -80,12 +81,23 @@
         </div>
 
         <div id="screen3" class="pantalla3" style="display: none;">
-            <div class="ganador1">
-                <div id="winner1"></div>
+            <div class="generalPantalla3">
+            
+                <div class="winsFrase">
+                    <div id="fraseWinner"></div>
+                
+                </div>
+                <div class="ganador1">
+                    <div id="winner1"></div>
+                </div>
+                <div class="ganador2">
+                    <div id="winner2"></div>
+                </div>
+
+                
             </div>
-            <div class="ganador2">
-                <div id="winner2"></div>
-            </div>
+        <div id="resetButton" class="resetBtn" onclick="cambiaPantalla('screen3','screen0')">RETURN</div>
+        </div>
         
 
 
