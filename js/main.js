@@ -79,7 +79,7 @@ let cambiaPantalla = (faseAhora,faseFutura) => {
     pantallaActual.style.display = "none";
     pantallaDestino.style.display = "flex";
 };
-mensaje2.innerHTML = `¡¡¡¡ELIGE DOS GUERREROS PARA QUE LUCHEN HASTA LA MUERTE!!!!`;
+mensaje2.innerHTML = `¡¡ELIGE DOS GUERREROS PARA QUE LUCHEN HASTA LA MUERTE!!`;
 let selectPersonaje = (personaje) => {
 
     
@@ -134,6 +134,7 @@ let atacar = () => {
             console.log("SUPER COMBO");
             j1.megaAtaque(j2);
             
+            
         }else if(especial == 4){
             console.log("KAME HAME");
             j1.ataqueEspecial(j2);
@@ -172,7 +173,7 @@ let atacar = () => {
         resolveIn(10).then(delay => {
             cambiaPantalla("screen2","screen3");
         });
-        showWinner2.innerHTML = `<div><img class="winner2" src="img/${j2.nombre}.jpg"></div>`;
+        showWinner2.innerHTML = `<div><img class="winner2" src="img/${j2.nombre}1.jpg"></div>`;
         showWinnerName.innerHTML = `${j2.nombre} WINS!!!`;
         
     }else if(j2.vida <= 0){
@@ -180,7 +181,7 @@ let atacar = () => {
         resolveIn(10).then(delay => {
             cambiaPantalla("screen2","screen3");
         });
-        showWinner1.innerHTML = `<div><img class="winner1" src="img/${j1.nombre}.jpg"></div>`;
+        showWinner1.innerHTML = `<div><img class="winner1" src="img/${j1.nombre}1.jpg"></div>`;
         showWinnerName.innerHTML = `${j1.nombre} WINS!!!`;
         
     };
