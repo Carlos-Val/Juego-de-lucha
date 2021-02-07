@@ -103,8 +103,8 @@ let selectPersonaje = (personaje) => {
             let showJugador1 = document.getElementById("guerrero1");
             let showJugador2 = document.getElementById("guerrero2");
 
-            showJugador1.innerHTML = `<div><img class="guerrero1" src="img/${j1.nombre}.jpg"></div>`;
-            showJugador2.innerHTML = `<div><img class="guerrero2" src="img/${j2.nombre}.jpg"></div>`;
+            showJugador1.innerHTML = `<div><img class="guerrero1" src="img/${j1.nombre}.png"></div>`;
+            showJugador2.innerHTML = `<div><img class="guerrero2" src="img/${j2.nombre}.png"></div>`;
             
 
             //Cambiar de pantalla porque ya tenemos a los guerreros elegidos
@@ -173,7 +173,7 @@ let atacar = () => {
         resolveIn(10).then(delay => {
             cambiaPantalla("screen2","screen3");
         });
-        showWinner2.innerHTML = `<div><img class="winner2" src="img/${j2.nombre}1.jpg"></div>`;
+        showWinner2.innerHTML = `<div><img class="winner2" src="img/${j2.nombre}1.png"></div>`;
         showWinnerName.innerHTML = `${j2.nombre} WINS!!!`;
         
         
@@ -182,7 +182,7 @@ let atacar = () => {
         resolveIn(10).then(delay => {
             cambiaPantalla("screen2","screen3");
         });
-        showWinner1.innerHTML = `<div><img class="winner1" src="img/${j1.nombre}1.jpg"></div>`;
+        showWinner1.innerHTML = `<div><img class="winner1" src="img/${j1.nombre}1.png"></div>`;
         showWinnerName.innerHTML = `${j1.nombre} WINS!!!`;
         
     };

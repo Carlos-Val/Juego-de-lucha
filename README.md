@@ -30,7 +30,7 @@
 
     Solo tienes que pinchar en el enlace y disfrutar:
     
-    <https://carlos-val.github.io/Juego-de-lucha>
+    https://carlos-val.github.io/Juego-de-lucha
 
 ## Construido con: :hammer:
 
