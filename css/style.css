@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
 }
-.pantalla0{
+.principal{
+    background-image: url(../img/fondo0.jpg);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/fondo\ 0.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    flex-direction: column;
     background-size: cover;
     height: 43.5em;
+    width: 100%;
+    
+    
+    
 }
 #comienzo{
     margin-right: 19em;
