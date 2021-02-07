@@ -18,9 +18,9 @@
     los personajes mediante el botón de lucha que es una imagen de un puño donde se debe hacer click con el 
     ratón para que vaya bajando la vida. Lo he hecho que forma random para que el juego sea más interesante.
 
-    Cuando uno de los dos personajes se queda sin vida, la aplicación pasa automáticamente a una nueva pantalla 
-    donde te informa de quien ha sido el vencedor y tiene un botón de RETURN que te devuelve a la pantalla de 
-    inicio del juego.
+    Cuando uno de los dos personajes se queda sin vida, la aplicación pasa automáticamente a una nueva 
+    pantalla donde te informa de quien ha sido el vencedor y tiene un botón de RETURN que te devuelve a la
+    pantalla de inicio del juego.
 
 ## Pre-requisitos :clipboard:
 
@@ -30,7 +30,7 @@
 
     Solo tienes que pinchar en el enlace y disfrutar:
     
-    ([Club de la lucha](https://carlos-val.github.io/Juego-de-lucha/ "El Club de la lucha"))
+    [https://carlos-val.github.io/Juego-de-lucha](https://carlos-val.github.io/Juego-de-lucha)
 
 ## Construido con: :hammer:
 
