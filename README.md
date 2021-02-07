@@ -30,13 +30,13 @@
 
     Solo tienes que pinchar en el enlace y disfrutar:
     
-    https://carlos-val.github.io/Juego-de-lucha/ 
+    ([Club de la lucha](https://carlos-val.github.io/Juego-de-lucha/ "El Club de la lucha"))
 
 ## Construido con: :hammer:
 
-    - HTML5
-    - CSS3 
-    - JAVASCRIPT 
+    * HTML5
+    * CSS3 
+    * JAVASCRIPT 
 
 ## Licencia :bookmark_tabs:
 
@@ -44,6 +44,6 @@
 
 ## Agradecimientos :gift:
 
-Queria agradecer a los compañeros que han estado ayudandome. Desde @devian5, pasando por @diegogb-08, sin olvidarme ni de @joanbatiste y de @alvaro-78, los cuatro jinetes del Meet. Os debo muchas :beer: y algún que otro :coffee:
+Queria agradecer a los compañeros que han estado ayudandome. Desde [@devian5](https://github.com/devian5), pasando por [@diegogb-08](https://github.com/diegogb-08), sin olvidarme ni de [@joanbatiste](https://github.com/joanbatiste) y de [@alvaro-78](https://github.com/Alvaro-78), los cuatro jinetes del Meet que me han estado acompañando en mi proyecto. Os debo muchas :beer: y algún que otro :coffee:
 
 
