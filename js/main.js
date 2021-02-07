@@ -176,6 +176,7 @@ let atacar = () => {
         showWinner2.innerHTML = `<div><img class="winner2" src="img/${j2.nombre}1.jpg"></div>`;
         showWinnerName.innerHTML = `${j2.nombre} WINS!!!`;
         
+        
     }else if(j2.vida <= 0){
         
         resolveIn(10).then(delay => {

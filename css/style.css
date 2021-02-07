@@ -246,6 +246,7 @@ progress[value]::-webkit-progress-value {
     margin-left: -7em;
     margin-bottom: 1em;
 }
+
 .resetBtn{
     font-size: 1.5em;
     margin-top: 20em;   
@@ -257,10 +258,5 @@ progress[value]::-webkit-progress-value {
     font-family: 'Press Start 2P', cursive;
     
 }
-/*.resetBtn:hover{
-    background-color: black;
-    
-    color: rgb(218, 132, 20);
-    border: black;
-}*/
+
 
