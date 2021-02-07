@@ -11,12 +11,18 @@
     background-size: cover;
     height: 43.5em;
     width: 100%;
-    
-    
-    
+}
+.logo{
+    background-image: url(../img/logo.jpg);
+    background-size: cover;
+    height: 15em;
+    width: 30em;
+    margin-right: 49em;
+
+
 }
 #comienzo{
-    margin-right: 19em;
+    margin-right: 43em;
     height: 1em;
     width: 14em;
     padding: 10px;
