@@ -163,8 +163,8 @@
 }
 .guerrero1{
     
-    height: 14em;
-    width: 12em;
+    height: 25em;
+    width: 13em;
 }
 .reunidos2{
     display:flex;
@@ -177,8 +177,8 @@
 }
 .guerrero2{
     
-    height: 14em;
-    width: 12em;
+    height: 25em;
+    width: 13em;
 }
 .botonAtacar{
     display:flex;
@@ -231,20 +231,21 @@ progress[value]::-webkit-progress-value {
     flex-direction: column;
 }
 .winner1{
-    height: 25em;
+    height: 30em;
     width: 13.5em;
     margin-left: -12em;
 }
 .winner2{
-    height: 25em;
+    height: 30em;
     width: 13.5em;
     margin-left: -12em;
 }
 #fraseWinner{
     font-size: 2em;
     font-family: 'Orbitron', sans-serif;
-    margin-left: -7em;
+    margin-left: -5em;
     margin-bottom: 1em;
+    
 }
 
 .resetBtn{
