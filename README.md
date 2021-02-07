@@ -11,7 +11,8 @@
     Tiene una página de inicio con un botón de "Click to START" para empezar el desarrollo del juego que nos 
     lleva a otra pantalla donde elegir a dos personajes y en la que podemos ver las características de cada 
     uno de los guerreros. Cuando eliges a los personajes se les pone unas tonalidades de grises y no se pueden 
-    volver a elegir. Si pasas el ratón por las imágenes, tiene un efecto hover para hacerlas un poco más grandes.
+    volver a elegir. Si pasas el ratón por las imágenes, tiene un efecto hover para hacerlas un poco más 
+    grandes.
 
     Una vez has elegido a los dos personajes, la aplicación nos envía a una nueva pantalla donde se enfrentan 
     los personajes mediante el botón de lucha que es una imagen de un puño donde se debe hacer click con el 
